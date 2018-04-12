@@ -1,7 +1,14 @@
 function setup() {
-    createCanvas(100, 50);
+    createCanvas(800, 800);
     background(153);
-    line(0, 0, width, height);
+    strokeWeight(10);
+    point(400, 400);
 }
 
-function draw() {}
+// complex no = c
+//
+// function c = z squared + c
+
+// the behavior of zero under the iteration of fc
+
+// x = x squared + 1 reoccurring
