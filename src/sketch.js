@@ -5,10 +5,23 @@ function setup() {
     point(400, 400);
 }
 
-// complex no = c
-//
-// function c = z squared + c
+function render() {
+    pixelDensity(1);
+    loadPixels();
+    setPixelsToGreyscale();
+}
 
-// the behavior of zero under the iteration of fc
+function setPixelsToGreyscale() {
+    for (let x = 0; x < width; x++) {
+        for (let y = 0; y < height; y++) {
+            let pixel = (x + y * width) * 4;
+            pixels[pixel + 0] = 51;
+            pixels[pixel + 1] = 51;
+            pixels[pixel + 2] = 51;
+            pixels[pixel + 3] = 255;
+        }
+    }
+    updatePixels();
+}
 
-// x = x squared + 1 reoccurring
+render();
